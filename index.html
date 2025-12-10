@@ -4,24 +4,33 @@
 <meta charset="UTF-8">
 <title>Senthuran S - Data Analyst Portfolio</title>
 <link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
 </head>
-<body>
+<body class="light">
 <header>
-  <h1>Senthuran S</h1>
-  <p>Data Analyst Portfolio</p>
+  <nav>
+    <h1>Senthuran S</h1>
+    <button id="toggleTheme">🌙</button>
+  </nav>
 </header>
-<section id="about">
-  <h2>About Me</h2>
-  <p>Analytical Data Analyst skilled in SQL, Power BI, Python, Tableau, and Excel...</p>
+
+<section class="hero">
+  <h2>Data Analyst Portfolio</h2>
+  <p>Skilled in SQL • Power BI • Python • Tableau • Excel</p>
 </section>
-<section id="projects">
+
+<section class="projects">
   <h2>Projects</h2>
-  <ul>
-    <li><a href="case_study.html">Sales & Revenue Case Study</a></li>
-  </ul>
+  <div class="grid">
+    <a class="card" href="case_study.html">
+      <h3>📊 Sales & Revenue Case Study</h3>
+      <p>End-to-end business analysis with insights & dashboards.</p>
+    </a>
+  </div>
 </section>
+
 <footer>
-  <p>© 2025 Senthuran S</p>
+  © 2025 Senthuran S — All Rights Reserved
 </footer>
 </body>
 </html>

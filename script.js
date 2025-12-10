@@ -1,1 +1,2 @@
-console.log('Portfolio Loaded');
+const btn=document.getElementById('toggleTheme');
+btn.onclick=()=>{ document.body.classList.toggle('dark'); };
