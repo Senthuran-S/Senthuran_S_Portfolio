@@ -1,36 +1,84 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Senthuran S - Data Analyst Portfolio</title>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Senthuran S — Data Analyst Portfolio</title>
 <link rel="stylesheet" href="style.css">
 <script src="script.js" defer></script>
 </head>
 <body class="light">
 <header>
-  <nav>
-    <h1>Senthuran S</h1>
-    <button id="toggleTheme">🌙</button>
-  </nav>
+  <div class="header-inner container">
+    <div class="brand">Senthuran S</div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a class="btn" href="resume.pdf" download>Download Resume</a>
+    </nav>
+    <button id="toggleTheme" class="toggle">🌙 Dark</button>
+  </div>
 </header>
 
-<section class="hero">
-  <h2>Data Analyst Portfolio</h2>
-  <p>Skilled in SQL • Power BI • Python • Tableau • Excel</p>
-</section>
+<main class="container">
+  <section class="hero">
+    <h1>Data Analyst Portfolio</h1>
+    <p class="meta">SQL • Power BI • Tableau • Python (Pandas) • Excel — Projects, Case Studies & Dashboards</p>
+  </section>
 
-<section class="projects">
-  <h2>Projects</h2>
-  <div class="grid">
-    <a class="card" href="case_study.html">
-      <h3>📊 Sales & Revenue Case Study</h3>
-      <p>End-to-end business analysis with insights & dashboards.</p>
-    </a>
-  </div>
-</section>
+  <section class="projects">
+    <h2 class="section-title">Projects</h2>
 
-<footer>
-  © 2025 Senthuran S — All Rights Reserved
+    <h3>SQL Projects</h3>
+    <div class="grid">
+      <a class="card" href="case_study.html">
+        <h3>📊 Sales & Revenue Case Study</h3>
+        <p>End-to-end revenue analysis using SQL and Power BI. (Case Study)</p>
+      </a>
+
+      <a class="card" href="layoff.html">
+        <h3>🗄️ Layoff Data Analysis (SQL)</h3>
+        <p>3,000+ layoff records analysed with window functions and CTEs.</p>
+      </a>
+    </div>
+
+    <h3>Power BI Projects</h3>
+    <div class="grid">
+      <a class="card" href="survey.html">
+        <h3>📈 Survey Data Dashboard (Power BI)</h3>
+        <p>Insights from 200+ survey responses about career transitions into data fields.</p>
+      </a>
+    </div>
+
+    <h3>Tableau Projects</h3>
+    <div class="grid">
+      <a class="card" href="airbnb.html">
+        <h3>🏘️ Airbnb Listings Dashboard (Tableau)</h3>
+        <p>50,000+ listings visualised — pricing, occupancy & property trends.</p>
+      </a>
+    </div>
+
+    <h3>Python Projects</h3>
+    <div class="grid">
+      <a class="card" href="automation.html">
+        <h3>🤖 File Automation Script</h3>
+        <p>Automated folder & file sorting script using Python — reduced manual effort by 80%.</p>
+      </a>
+    </div>
+
+    <h3>Excel Dashboards</h3>
+    <div class="grid">
+      <a class="card" href="bike.html">
+        <h3>📊 Bike Sales Dashboard (Excel)</h3>
+        <p>Pivot tables, slicers and regional sales analysis.</p>
+      </a>
+    </div>
+
+  </section>
+</main>
+
+<footer class="footer">
+  © 2025 Senthuran S — Data & Analytics
 </footer>
 </body>
 </html>
