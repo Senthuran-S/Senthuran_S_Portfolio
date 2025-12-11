@@ -1,0 +1,1 @@
+SELECT region, SUM(revenue) as total_revenue FROM sales GROUP BY region;
