@@ -1,0 +1,78 @@
+/* Theme B — Dark-first with Light toggle (v1) */
+:root{
+  --bg-dark:#071018;
+  --card-dark:#081226;
+  --muted:#9fb0c6;
+  --accent:#0bb5ff;
+  --accent2:#ffc857;
+  --text-light:#e6f2ff;
+  --text-dark:#071018;
+
+  --light-bg:#f7f7fb;
+  --light-card:#ffffff;
+  --transition:0.28s ease;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;font-family:Inter, "Segoe UI", Roboto, Arial, sans-serif;
+  background:var(--bg-dark);color:var(--text-light);
+  transition:background var(--transition), color var(--transition);
+}
+
+/* Header */
+.header-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:14px 18px}
+.brand{font-weight:800;font-size:20px;color:var(--accent2)}
+.nav{display:flex;gap:12px;align-items:center}
+.nav a{color:var(--text-light);text-decoration:none;padding:8px 10px;border-radius:8px;font-weight:600}
+.nav .btn{background:var(--accent);color:#001;padding:8px 12px;border-radius:8px;text-decoration:none;font-weight:700}
+
+/* Toggle */
+.toggle-btn{background:transparent;border:1px solid rgba(255,255,255,0.05);color:var(--text-light);padding:8px;border-radius:8px;cursor:pointer}
+
+/* Container & hero */
+.container{max-width:1100px;margin:28px auto;padding:0 18px}
+.hero{text-align:center;padding:48px 0}
+.hero h1{font-size:44px;margin:0}
+.meta{color:var(--muted);opacity:0.95}
+
+/* Sections */
+.section-title{font-size:20px;margin:18px 0 8px;color:var(--accent)}
+.grid{display:flex;flex-wrap:wrap;gap:18px}
+
+/* Cards */
+.card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));width:320px;border-radius:12px;overflow:hidden;box-shadow:0 8px 28px rgba(0,0,0,0.6);text-decoration:none;color:inherit;border:1px solid rgba(255,255,255,0.03)}
+.card img{width:100%;height:180px;object-fit:cover}
+.card-body{padding:14px}
+.card-body h3{margin:6px 0;font-size:18px;color:var(--accent2)}
+.card-body p{margin:6px 0;color:var(--muted)}
+.small{font-size:13px;color:var(--muted)}
+
+/* Project content */
+.project-content{background:var(--card-dark);padding:18px;border-radius:12px;box-shadow:0 8px 26px rgba(0,0,0,0.6);margin-top:12px;border:1px solid rgba(255,255,255,0.02)}
+.project-content img{width:100%;border-radius:8px}
+
+/* Buttons and links */
+.code-link{display:inline-block;margin-top:10px;padding:10px 14px;background:var(--accent);color:#001;text-decoration:none;border-radius:8px;font-weight:700}
+.dataset-link{display:inline-block;margin-top:8px;color:var(--accent2);font-weight:600}
+
+/* Footer */
+.footer{background:#04121b;color:var(--muted);padding:16px;text-align:center;margin-top:30px;border-top:1px solid rgba(255,255,255,0.03)}
+
+/* Light mode */
+body.lightmode{
+  background:var(--light-bg);color:var(--text-dark)
+}
+body.lightmode .project-content{background:var(--light-card);border-color:#e6e9ef}
+body.lightmode .nav a{color:var(--text-dark)}
+body.lightmode .brand{color:var(--primary)}
+
+/* Responsive */
+@media(max-width:760px){
+  .grid{flex-direction:column;align-items:stretch}
+  .card{width:100%}
+  .nav{display:none}
+  .header-inner{padding:12px}
+  .hero h1{font-size:34px}
+}
