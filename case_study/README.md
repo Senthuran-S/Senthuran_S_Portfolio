@@ -1,1 +1,0 @@
-Case Study Placeholder - Full content will be added on next rebuild.
