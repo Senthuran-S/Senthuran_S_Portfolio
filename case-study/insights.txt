@@ -1,0 +1,7 @@
+
+Key Insights Summary:
+- Tech sector had the highest layoffs in the dataset.
+- Series B and C startups showed higher proportional layoffs.
+- US, India, and UK were top impacted countries.
+- Layoffs peaked in Q1 2023.
+- Recommendations: Prioritize cost optimization for vulnerable stages, re-skill programs for affected employees.
