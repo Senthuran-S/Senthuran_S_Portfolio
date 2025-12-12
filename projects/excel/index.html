@@ -1,63 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- Google Analytics GA4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QCX3G9KSPC"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-QCX3G9KSPC');
+</script>
+
 <head>
-
-    <!-- Google Analytics GA4 -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QCX3G9KSPC"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-QCX3G9KSPC');
-    </script>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Excel Projects – Senthuran S</title>
-    <link rel="stylesheet" href="../../assets/css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Excel Projects – Senthuran S</title>
+  <link rel="stylesheet" href="../../assets/css/style.css" />
 </head>
 
 <body>
-
-<header>
+  <header>
     <div class="header-inner">
-        <div class="brand">Senthuran S</div>
-        <nav class="nav">
-            <a href="../../index.html">Home</a>
-            <a href="../excel/index.html" class="active">Excel</a>
-        </nav>
+      <div class="brand">Senthuran S</div>
+      <nav class="nav">
+        <a href="../../index.html">Home</a>
+        <a href="../sql/index.html">SQL</a>
+        <a href="../python/index.html">Python</a>
+        <a href="../powerbi/index.html">Power BI</a>
+        <a href="../tableau/index.html">Tableau</a>
+        <a href="../excel/index.html">Excel</a>
+      </nav>
     </div>
-</header>
+  </header>
 
-<main class="container">
+  <main class="container">
 
-    <h1 class="section-title">Excel Projects</h1>
+    <!-- PAGE TITLE -->
+    <section class="hero">
+      <h1 style="color: var(--accent);">Excel Projects</h1>
+      <p class="meta">Interactive dashboards and insights using Excel, Pivot Tables, and formulas.</p>
+    </section>
 
-    <div class="project-grid">
+    <!-- BIKE SALES DASHBOARD -->
+    <section>
+      <h2 class="section-title">Bike Sales Dashboard</h2>
 
-        <!-- 🚲 PROJECT CARD — BIKE SALES -->
-        <div class="project-card">
-            <img src="../../assets/images/bike_red_bikes.jpg" class="project-thumb">
-            <h3>Bike Sales Dashboard</h3>
-            <p>Interactive Excel dashboard analyzing customer demographics, income groups, commute distance, and buying behavior.</p>
+      <img src="../../assets/images/case_study_excel_dashboard.png"
+           alt="Bike Sales Dashboard" class="case-image-large" />
 
-            <a class="primary-btn"
-               href="https://github.com/Senthuran-S/MS-Excel-Projects/blob/main/Bike%20Sales%20dashboard_.pdf" 
-               target="_blank">View Project PDF</a>
+      <h3>Project Overview</h3>
+      <p>
+        This Excel dashboard analyzes customer demographics, income brackets, commute distance,
+        and purchasing decisions to identify sales insights for bike retailers.
+      </p>
 
-            <!-- ⭐ NEW CASE STUDY BUTTON -->
-            <a class="secondary-btn"
-               href="../../case-study/excel-bike-sales/index.html">View Full Case Study</a>
-        </div>
+      <h3>Code</h3>
+      <a class="btn" href="bike_sales.pdf" target="_blank">View Project PDF →</a>
+      <a class="btn" href="bike_sales_case_study.html">View Full Case Study →</a>
 
-    </div>
+      <h3>Dashboard Snapshot</h3>
+      <img src="../../assets/images/case_study_excel_picot.png"
+           class="case-image" alt="Pivot Table" />
 
-</main>
+      <h3>Key Insights</h3>
+      <ul>
+        <li>Customers aged 30–45 represent the highest purchase group.</li>
+        <li>Higher income groups tend to purchase bikes more frequently.</li>
+        <li>Commute distance has a strong correlation with purchase likelihood.</li>
+      </ul>
 
-<footer>
+      <h3>Why This Matters</h3>
+      <p>
+        Helps bike retailers optimize marketing, pricing strategies, and target customer segments
+        leading to improved sales performance.
+      </p>
+
+      <hr />
+    </section>
+
+  </main>
+
+  <footer>
     <p>© 2025 Senthuran S</p>
-</footer>
+  </footer>
 
 </body>
 </html>
