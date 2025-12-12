@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SQL Project — Data Cleaning</title>
+  <link rel="stylesheet" href="../../assets/css/style.css?v=1">
+  <script src="../../assets/js/script.js" defer></script>
+</head>
+
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="brand">Senthuran S</div>
+    <nav class="nav">
+      <a href="../../index.html">Home</a>
+      <a href="index.html">SQL Projects</a>
+      <a class="btn" href="../../Resume.pdf" download>Download Resume</a>
+    </nav>
+    <button id="toggleTheme" class="toggle-btn">☀️ Light</button>
+  </div>
+</header>
+
+<main class="container">
+
+  <h1 class="section-title">Data Cleaning in SQL</h1>
+
+  <div class="project-content">
+
+    <img src="../../assets/images/sql1.png" alt="SQL Cleaning">
+
+    <h2>Project Overview</h2>
+    <p>
+      This project focuses on cleaning the <strong>Layoffs Dataset</strong> using several SQL techniques
+      including removing duplicates, standardizing data, handling null values, and correcting inconsistent entries.
+    </p>
+
+    <h2>Code</h2>
+    <a class="code-link" href="https://github.com/Senthuran-S/SQL-Projects/blob/main/SQL%20Project%201%20-%20Data%20Cleaning.sql" target="_blank">
+      View SQL Cleaning Script →
+    </a>
+
+    <h2>Dataset</h2>
+    <a class="dataset-link" href="https://github.com/Senthuran-S/Portfolio-Project-Datasets/blob/main/layoffs-%20SQL%20Data%20cleaning%20and%20Exploration.csv" target="_blank">
+      layoffs-data-cleaning-and-analysis.csv
+    </a>
+
+    <h2>Key Steps Performed</h2>
+    <ul>
+      <li>Removed duplicate rows using CTE + ROW_NUMBER()</li>
+      <li>Standardized inconsistent company and industry names</li>
+      <li>Handled null and missing values in critical fields</li>
+      <li>Formatted date fields for consistent usage</li>
+      <li>Prepared optimized dataset for EDA</li>
+    </ul>
+
+    <h2>Why This Matters</h2>
+    <p>
+      Clean, standardized data forms the foundation for accurate analysis.
+      This cleaned dataset is used directly in the next project: <strong>EDA in SQL</strong>.
+    </p>
+
+  </div>
+
+</main>
+
+<footer class="footer">© 2025 Senthuran S</footer>
+
+</body>
+</html>
