@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Case Study — Layoffs Data Cleaning</title>
+  <link rel="stylesheet" href="../assets/css/style.css?v=1">
+  <script src="../assets/js/script.js" defer></script>
+</head>
+
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="brand">Senthuran S</div>
+    <nav class="nav">
+      <a href="../index.html">Home</a>
+      <a class="btn" href="../Resume.pdf" download>Download Resume</a>
+    </nav>
+    <button id="toggleTheme" class="toggle-btn">☀️ Light</button>
+  </div>
+</header>
+
+<main class="container">
+
+  <h1 class="section-title">Case Study: Layoffs Data Cleaning (SQL)</h1>
+
+  <div class="project-content">
+
+    <img src="../assets/images/case_study.png" alt="Case Study">
+
+    <h2>Overview</h2>
+    <p>
+      This case study documents the complete data-cleaning workflow performed on the global 
+      <strong>Layoffs Dataset</strong>. The project prepares raw, inconsistent data for deeper analysis 
+      such as trend evaluation, industry comparison, and workforce impact estimation.
+    </p>
+
+    <h2>Objectives</h2>
+    <ul>
+      <li>Remove duplicate and inconsistent records</li>
+      <li>Standardize company, industry, and country names</li>
+      <li>Handle missing or null values systematically</li>
+      <li>Fix incorrect date formats and invalid entries</li>
+      <li>Prepare a clean dataset for EDA and dashboard visualizations</li>
+    </ul>
+
+    <h2>SQL Code Used</h2>
+    <a class="code-link" 
+       href="https://github.com/Senthuran-S/SQL-Projects/blob/main/SQL%20Project%201%20-%20Data%20Cleaning.sql" 
+       target="_blank">View SQL Data Cleaning Script →</a>
+
+    <h2>Dataset</h2>
+    <a class="dataset-link" 
+       href="https://github.com/Senthuran-S/Portfolio-Project-Datasets/blob/main/layoffs-%20SQL%20Data%20cleaning%20and%20Exploration.csv"
+       target="_blank">
+       layoffs_cleaned_dataset.csv
+    </a>
+
+    <h2>Methodology</h2>
+    <ol>
+      <li><strong>Duplicate Removal:</strong> ROW_NUMBER() used to remove exact duplicates.</li>
+      <li><strong>Standardization:</strong> Industry names and company names transformed to unify spelling.</li>
+      <li><strong>Null Handling:</strong> Missing values filled or filtered based on context.</li>
+      <li><strong>Date Fixing:</strong> Converted inconsistent date formats to standard YYYY-MM-DD.</li>
+      <li><strong>Validation:</strong> Ensured all numeric fields contained valid values.</li>
+    </ol>
+
+    <h2>Key Findings</h2>
+    <ul>
+      <li>Tech companies represent the largest portion of layoffs globally.</li>
+      <li>2022 shows the highest spike in layoffs across all industries.</li>
+      <li>Many companies had inconsistent industry labels before cleaning.</li>
+      <li>Missing values in “percentage_laid_off” required careful interpretation.</li>
+    </ul>
+
+    <h2>Conclusion</h2>
+    <p>
+      This case study demonstrates the importance of data cleaning in real-world analytics.
+      A dirty dataset can lead to incorrect insights—cleaning ensures accuracy and 
+      reliability for downstream analysis and dashboards.
+    </p>
+
+  </div>
+</main>
+
+<footer class="footer">© 2025 Senthuran S</footer>
+
+</body>
+</html>
