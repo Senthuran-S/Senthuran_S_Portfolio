@@ -2,82 +2,62 @@
 <html lang="en">
 <head>
 
-  <!-- Google Analytics GA4 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-QCX3G9KSPC"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-QCX3G9KSPC');
-</script>
+    <!-- Google Analytics GA4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QCX3G9KSPC"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-QCX3G9KSPC');
+    </script>
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Excel Project — Bike Sales Dashboard</title>
-  <link rel="stylesheet" href="../../assets/css/style.css?v=1">
-  <script src="../../assets/js/script.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Excel Projects – Senthuran S</title>
+    <link rel="stylesheet" href="../../assets/css/style.css">
 </head>
 
 <body>
 
 <header>
-  <div class="header-inner">
-    <div class="brand">Senthuran S</div>
-    <nav class="nav">
-      <a href="../../index.html">Home</a>
-      <a class="btn" href="../../Resume.pdf" download>Download Resume</a>
-    </nav>
-    <button id="toggleTheme" class="toggle-btn">☀️ Light</button>
-  </div>
+    <div class="header-inner">
+        <div class="brand">Senthuran S</div>
+        <nav class="nav">
+            <a href="../../index.html">Home</a>
+            <a href="../excel/index.html" class="active">Excel</a>
+        </nav>
+    </div>
 </header>
 
 <main class="container">
 
-  <h1 class="section-title">Bike Sales Dashboard (Excel)</h1>
+    <h1 class="section-title">Excel Projects</h1>
 
-  <div class="project-content">
+    <div class="project-grid">
 
-    <img src="../../assets/images/excel.png" alt="Bike Sales Dashboard">
+        <!-- 🚲 PROJECT CARD — BIKE SALES -->
+        <div class="project-card">
+            <img src="../../assets/images/bike_red_bikes.jpg" class="project-thumb">
+            <h3>Bike Sales Dashboard</h3>
+            <p>Interactive Excel dashboard analyzing customer demographics, income groups, commute distance, and buying behavior.</p>
 
-    <h2>Project Overview</h2>
-    <p>
-      This Excel-based dashboard provides sales insights for a bike company, including 
-      customer demographics, average income, commute distance, and total purchase behavior.
-      Pivot tables and slicers enhance interactivity.
-    </p>
+            <a class="primary-btn"
+               href="https://github.com/Senthuran-S/MS-Excel-Projects/blob/main/Bike%20Sales%20dashboard_.pdf" 
+               target="_blank">View Project PDF</a>
 
-    <h2>Dashboard File</h2>
-    <a class="code-link" 
-       href="https://github.com/Senthuran-S/MS-Excel-Projects/blob/main/Bike%20Sales%20dashboard_.pdf" 
-       target="_blank">
-      View Bike Sales Dashboard →
-    </a>
+            <!-- ⭐ NEW CASE STUDY BUTTON -->
+            <a class="secondary-btn"
+               href="../../case-study/excel-bike-sales/index.html">View Full Case Study</a>
+        </div>
 
-    <h2>Dataset</h2>
-    <a class="dataset-link" 
-       href="https://github.com/Senthuran-S/Portfolio-Project-Datasets/blob/main/Excel%20Project%20Dataset.xlsx"
-       target="_blank">bike-sales-dataset.xlsx</a>
-
-    <h2>Key Insights</h2>
-    <ul>
-      <li>Customers with higher income levels are more likely to purchase bikes.</li>
-      <li>Shorter commute distances correlate with higher purchase rates.</li>
-      <li>Suburban regions show strong sales performance.</li>
-      <li>Middle-age demographic groups purchase the most bikes.</li>
-      <li>Interactive filters allow segmented customer analysis.</li>
-    </ul>
-
-    <h2>Why This Matters</h2>
-    <p>
-      Excel dashboards remain a widely used tool in organizations,
-      enabling fast and flexible business reporting for non-technical stakeholders.
-    </p>
-
-  </div>
+    </div>
 
 </main>
 
-<footer class="footer">© 2025 Senthuran S</footer>
+<footer>
+    <p>© 2025 Senthuran S</p>
+</footer>
 
 </body>
 </html>
