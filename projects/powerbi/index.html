@@ -2,62 +2,73 @@
 <html lang="en">
 <head>
 
-  <!-- Google Analytics GA4 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-QCX3G9KSPC"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-QCX3G9KSPC');
-</script>
+    <!-- Google Analytics GA4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QCX3G9KSPC"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-QCX3G9KSPC');
+    </script>
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Power BI Projects — Senthuran</title>
-  <link rel="stylesheet" href="../../assets/css/style.css?v=1">
-  <script src="../../assets/js/script.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Power BI Projects – Senthuran S</title>
+    <link rel="stylesheet" href="../../assets/css/style.css">
 </head>
 
 <body>
 
 <header>
-  <div class="header-inner">
-    <div class="brand">Senthuran S</div>
-    <nav class="nav">
-      <a href="../../index.html">Home</a>
-      <a class="btn" href="../../Resume.pdf" download>Download Resume</a>
-    </nav>
-    <button id="toggleTheme" class="toggle-btn">☀️ Light</button>
-  </div>
+    <div class="header-inner">
+        <div class="brand">Senthuran S</div>
+        <nav class="nav">
+            <a href="../../index.html">Home</a>
+            <a href="../powerbi/index.html" class="active">Power BI</a>
+        </nav>
+    </div>
 </header>
 
 <main class="container">
 
-  <h1 class="section-title">Power BI Projects</h1>
+    <h1 class="section-title">Power BI Projects</h1>
 
-  <div class="grid">
+    <div class="project-grid">
 
-    <a class="card" href="powerbi_survey.html">
-      <img src="../../assets/images/pbi1.png" alt="Survey Dashboard">
-      <div class="card-body">
-        <h3>Survey Data Dashboard</h3>
-        <p class="small">Professional Survey Breakdown</p>
-      </div>
-    </a>
+        <!-- 📊 PROJECT CARD — SURVEY DASHBOARD -->
+        <div class="project-card">
+            <img src="../../assets/images/powerbi_logo.jpg" class="project-thumb">
+            <h3>Survey Data Dashboard</h3>
+            <p>Analysis of global data professionals across salaries, work-life balance, tools used, and experience levels.</p>
 
-    <a class="card" href="powerbi_sncorp.html">
-      <img src="../../assets/images/pbi2.png" alt="SN Corp Dashboard">
-      <div class="card-body">
-        <h3>SN Corp Dashboard</h3>
-        <p class="small">Power BI Full Project</p>
-      </div>
-    </a>
+            <a class="primary-btn" 
+               href="https://github.com/Senthuran-S/Power-BI/blob/main/PowerBI%20Full%20Project.pdf" 
+               target="_blank">View Project PDF</a>
 
-  </div>
+            <!-- ⭐ NEW CASE STUDY BUTTON -->
+            <a class="secondary-btn" 
+               href="../../case-study/powerbi-survey/index.html">View Full Case Study</a>
+        </div>
+
+        <!-- 📈 PROJECT CARD — SN CORP -->
+        <div class="project-card">
+            <img src="../../assets/images/colorful_dashboard_dark.jpg" class="project-thumb">
+            <h3>SN Corporation Dashboard</h3>
+            <p>Interactive dashboard analyzing company-wide KPIs including revenue, orders, region performance, and sales trends.</p>
+
+            <a class="primary-btn"
+               href="https://github.com/Senthuran-S/Power-BI-2/blob/main/SN%20Corp%20dashboard.pdf" 
+               target="_blank">View Project PDF</a>
+        </div>
+
+    </div>
 
 </main>
 
-<footer class="footer">© 2025 Senthuran S</footer>
+<footer>
+    <p>© 2025 Senthuran S</p>
+</footer>
 
 </body>
 </html>
