@@ -1,59 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google Analytics GA4 -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QCX3G9KSPC"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-QCX3G9KSPC');
-  </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excel Projects</title>
+    <link rel="stylesheet" href="../../assets/css/style.css">
 
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Excel Projects – Senthuran S</title>
-  <link rel="stylesheet" href="../../assets/css/style.css" />
+    <!-- GA4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QCX3G9KSPC"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-QCX3G9KSPC');
+    </script>
+
+    <style>
+        .project-container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 40px;
+            color: #fff;
+        }
+        h1, h2 {
+            color: #4db8ff;
+        }
+        img {
+            width: 100%;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 18px;
+            background-color: #007bff;
+            color: white;
+            border-radius: 6px;
+            text-decoration: none;
+            margin-bottom: 20px;
+        }
+        .btn:hover { background-color: #005fcc; }
+    </style>
 </head>
 
 <body>
-<header>
-  <div class="header-inner">
-    <div class="brand">Senthuran S</div>
-    <nav class="nav">
-      <a href="../../index.html">Home</a>
-    </nav>
-  </div>
-</header>
+<div class="project-container">
 
-<main class="container">
+    <h1>Excel Projects</h1>
 
-  <section class="hero">
-    <h1 style="color:var(--accent2)">Excel Projects</h1>
-  </section>
+    <h2>Bike Sales Dashboard</h2>
+    <img src="../../assets/images/case_study_excel_dashboard.png" alt="Bike Sales Dashboard">
 
-  <!-- Excel Project -->
-  <section>
-    <h2 class="section-title">Bike Sales Dashboard</h2>
-
-    <img src="../../assets/images/case_study_excel_dashboard.png" class="project-img">
-
+    <h3>Project Overview</h3>
     <p>
-      Interactive Excel dashboard analyzing bike buyers’ demographics, income groups, commute distance, 
-      and purchase behaviour using Pivot Tables and slicers.
+        This Excel dashboard analyzes customer demographics, purchase behavior, 
+        income groups and commute distance. Pivot tables and slicers were used to 
+        uncover actionable insights.
     </p>
 
-    <a class="button" href="../../assets/images/case_study_excel_dashboard.png" target="_blank">View Dashboard Image →</a>
-
-    <a class="button" href="excel_case_study.html">View Full Case Study →</a><br><br>
+    <h3>Dashboard</h3>
+    <a class="btn" href="https://github.com/Senthuran-S/MS-Excel-Projects/blob/main/Bike%20Sales%20dashboard.xlsx"
+       target="_blank">📊 View Dashboard</a>
 
     <h3>Dataset</h3>
-    <a class="dataset" href="https://github.com/Senthuran-S/MS-Excel-Projects/blob/main/Bike%20Sales%20dashboard.xlsx" target="_blank">
-      Bike Sales Dashboard.xlsx
+    <a href="https://github.com/Senthuran-S/MS-Excel-Projects/blob/main/Bike%20Sales%20dashboard.xlsx"
+       target="_blank">
+       Bike Sales Dashboard.xlsx
     </a>
 
-  </section>
+    <h3>Key Insights</h3>
+    <ul>
+        <li>Higher income groups are more likely to purchase a bike.</li>
+        <li>Middle-aged customers represent the largest buying segment.</li>
+        <li>Commute distance impacts the decision to buy a bike.</li>
+        <li>Regional differences reveal strong markets in Europe & NA.</li>
+    </ul>
 
-</main>
+    <h3>Why This Matters</h3>
+    <p>
+        These insights help businesses segment customers, plan marketing strategies, 
+        and tailor product offerings more effectively.
+    </p>
+
+</div>
 </body>
 </html>
