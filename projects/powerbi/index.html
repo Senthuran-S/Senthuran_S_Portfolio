@@ -1,68 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google Analytics GA4 -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QCX3G9KSPC"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-QCX3G9KSPC');
-  </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Power BI Projects</title>
+    <link rel="stylesheet" href="../../assets/css/style.css">
 
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Power BI Projects – Senthuran S</title>
-  <link rel="stylesheet" href="../../assets/css/style.css" />
+    <!-- GA4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QCX3G9KSPC"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-QCX3G9KSPC');
+    </script>
+
+    <style>
+        .project-container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 40px;
+            color: #fff;
+        }
+        h1, h2 {
+            color: #4db8ff;
+        }
+        img {
+            width: 100%;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 18px;
+            background-color: #007bff;
+            color: white;
+            border-radius: 6px;
+            text-decoration: none;
+            margin-bottom: 20px;
+        }
+        .btn:hover { background-color: #005fcc; }
+        hr { margin: 50px 0; opacity: 0.3; }
+    </style>
 </head>
-
 <body>
-<header>
-  <div class="header-inner">
-    <div class="brand">Senthuran S</div>
-    <nav class="nav">
-      <a href="../../index.html">Home</a>
-    </nav>
-  </div>
-</header>
 
-<main class="container">
+<div class="project-container">
 
-  <section class="hero">
-    <h1 style="color:var(--accent2)">Power BI Projects</h1>
-  </section>
+    <h1>Power BI Projects</h1>
 
-  <!-- Project 1 -->
-  <section>
-    <h2 class="section-title">Survey Data Dashboard</h2>
-    <img src="../../assets/images/case_study_pbi_dashboard.png" class="project-img">
+    <!-- ---------------------------- -->
+    <!-- SURVEY DATA DASHBOARD PROJECT -->
+    <!-- ---------------------------- -->
+    <h2>Survey Data Dashboard</h2>
+    <img src="../../assets/images/case_study_pbi_dashboard.png" alt="Survey Dashboard">
 
+    <h3>Project Overview</h3>
     <p>
-      A Power BI dashboard analyzing global data professionals' demographics, salaries, job satisfaction, difficulty entering data careers, and tools used.
+        This dashboard analyzes global data professionals across salary, work-life balance, 
+        experience levels, tools used, and job satisfaction. It helps companies understand 
+        workforce trends and talent distribution.
     </p>
 
-    <a class="button" href="powerbi_survey.html">View Full Case Study →</a><br><br>
+    <h3>Dashboard</h3>
+    <a class="btn" 
+       href="https://github.com/Senthuran-S/Power-BI/blob/main/PowerBI%20Full%20Project.pbix" 
+       target="_blank">📊 View Dashboard</a>
 
     <h3>Dataset</h3>
-    <a class="dataset" href="https://github.com/Senthuran-S/Power-BI/blob/main/PowerBI%20Full%20Project%20Dataset.xlsx" target="_blank">
-      PowerBI Full Project Dataset.xlsx
+    <a href="https://github.com/Senthuran-S/Power-BI/blob/main/PowerBI%20Full%20Project%20Dataset.xlsx" target="_blank">
+        PowerBI Full Project Dataset.xlsx
     </a>
 
-  </section>
+    <h3>Key Insights</h3>
+    <ul>
+        <li>Age distribution shows most professionals fall between ages 20–35.</li>
+        <li>Tech roles have the highest salary progression.</li>
+        <li>Work-life balance scores vary significantly by role.</li>
+        <li>Online learning is the most preferred upskilling method.</li>
+    </ul>
 
-  <!-- Project 2 -->
-  <section>
-    <h2 class="section-title">SN Corporation Dashboard</h2>
-    <img src="../../assets/images/case_study_pbi_insights.png" class="project-img">
-
+    <h3>Why This Matters</h3>
     <p>
-      Interactive dashboard analyzing company KPI performance including revenue, orders, shipping, and region trends.
+        Understanding workforce structure enables companies to optimize hiring, improve 
+        employee engagement, and structure career paths strategically.
     </p>
 
-    <a class="button" href="powerbi_sncorp.html">View Project →</a>
-  </section>
+    <hr>
 
-</main>
+    <!-- ---------------------------- -->
+    <!-- SN CORP PROJECT -->
+    <!-- ---------------------------- -->
+
+    <h2>SN Corporation Dashboard</h2>
+    <img src="../../assets/images/case_study_pbi_demographics_breakdown.png" alt="SN Corp Dashboard">
+
+    <h3>Project Overview</h3>
+    <p>
+        This dashboard focuses on company-wide KPIs including revenue trends, order volume, 
+        product performance, and regional contributions.
+    </p>
+
+    <h3>Dashboard</h3>
+    <a class="btn" href="https://github.com/Senthuran-S/Power-BI/blob/main/SN%20Corporation.pbix"
+       target="_blank">📊 View Dashboard</a>
+
+    <h3>Dataset</h3>
+    <p>Used internal SN Corporation business data (sales, regions, segments).</p>
+
+    <h3>Key Insights</h3>
+    <ul>
+        <li>Revenue peaks during Q2 and Q4.</li>
+        <li>North America is the strongest region by sales volume.</li>
+        <li>Top-performing products contribute 60% of total revenue.</li>
+    </ul>
+
+    <h3>Why This Matters</h3>
+    <p>
+        These insights help leadership plan inventory, marketing strategies, and forecasting.
+    </p>
+
+</div>
 
 </body>
 </html>
