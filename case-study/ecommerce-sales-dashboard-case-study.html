@@ -1,1 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>E-Commerce Sales Performance Dashboard</title>
+
+    <link rel="stylesheet" href="../assets/style.css">
+
+    <style>
+
+        .case-study-container{
+            max-width:1100px;
+            margin:auto;
+            padding:40px 20px;
+        }
+
+        .hero-image,
+        .section-image{
+            width:100%;
+            border-radius:14px;
+            margin-top:25px;
+            margin-bottom:25px;
+        }
+
+        .section{
+            margin-top:60px;
+        }
+
+        .section h2{
+            margin-bottom:15px;
+        }
+
+        .highlight-box{
+            background:rgba(255,255,255,0.05);
+            padding:20px;
+            border-radius:14px;
+            margin-top:20px;
+            border-left:4px solid #00bcd4;
+        }
+
+        .insight-grid{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+            gap:20px;
+            margin-top:30px;
+        }
+
+        .insight-card{
+            background:rgba(255,255,255,0.05);
+            padding:20px;
+            border-radius:14px;
+        }
+
+        ul li{
+            margin-bottom:12px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<div class="case-study-container">
+
+    <h1>E-Commerce Sales Performance Dashboard</h1>
+
+    <p>
+        End-to-end business intelligence solution built using Power BI, MySQL, DAX, and Star Schema modeling to analyze 9,694+ e-commerce transactions from 2014–2017.
+    </p>
+
+    <!-- EXECUTIVE SUMMARY -->
+
+    <img src="../assets/images/ecommerce-executive-summary.jpg"
+         alt="Executive Summary Dashboard"
+         class="hero-image">
+
+    <!-- PROJECT OVERVIEW -->
+
+    <div class="section">
+
+        <h2>Project Overview</h2>
+
+        <p>
+            This project involved building a complete self-service Power BI dashboard solution for an e-commerce business using the Superstore dataset. The objective was to replace static Excel reporting with an interactive analytics platform enabling leadership teams to monitor sales performance, identify profitability issues, and make data-driven decisions.
+        </p>
+
+        <p>
+            The project covered the full BI lifecycle including MySQL data preparation, Power BI data modeling, DAX measure creation, drill-through reporting, and multi-page dashboard development.
+        </p>
+
+    </div>
+
+    <!-- STAR SCHEMA -->
+
+    <div class="section">
+
+        <h2>Data Model — Star Schema</h2>
+
+        <p>
+            A star schema data model was designed using the Superstore transactions table as the central fact table with a dedicated Date Table supporting time intelligence calculations.
+        </p>
+
+        <div class="highlight-box">
+            MySQL → Power Query → Star Schema → DAX Measures → Interactive Dashboard → Business Insights
+        </div>
+
+        <img src="../assets/images/ecommerce-star-schema.png"
+             alt="Star Schema Data Model"
+             class="section-image">
+
+        <p>
+            The Date Table was created using DAX CALENDAR and enriched with Year, Month, Quarter, and Year-Month columns. A one-to-many relationship was established between Date Table[Date] and Superstore[Order Date].
+        </p>
+
+    </div>
+
+    <!-- DAX MEASURES -->
+
+    <div class="section">
+
+        <h2>DAX Measures & Time Intelligence</h2>
+
+        <p>
+            Multiple DAX measures were developed covering KPIs, profitability analysis, and time intelligence reporting.
+        </p>
+
+        <img src="../assets/images/ecommerce-dax-measures.png"
+             alt="DAX Measures"
+             class="section-image">
+
+        <ul>
+            <li>Total Sales</li>
+            <li>Total Profit</li>
+            <li>Profit Margin %</li>
+            <li>Total Orders</li>
+            <li>MTD Sales</li>
+            <li>YTD Sales</li>
+            <li>Previous Year Sales</li>
+            <li>YoY Growth %</li>
+        </ul>
+
+    </div>
+
+    <!-- EXECUTIVE DASHBOARD -->
+
+    <div class="section">
+
+        <h2>Executive Summary Dashboard</h2>
+
+        <p>
+            The Executive Summary page provides leadership with a complete business overview including sales, profit, margin performance, category contribution, and regional analysis.
+        </p>
+
+        <img src="../assets/images/ecommerce-executive-summary.jpg"
+             alt="Executive Summary"
+             class="section-image">
+
+        <div class="highlight-box">
+            West region generated the highest profit while Central region showed weak profitability despite strong sales volume.
+        </div>
+
+    </div>
+
+    <!-- DRILL THROUGH -->
+
+    <div class="section">
+
+        <h2>Drill-Through Navigation</h2>
+
+        <p>
+            Drill-through functionality was implemented enabling users to right-click categories and navigate directly into detailed sub-category analysis pages.
+        </p>
+
+        <img src="../assets/images/ecommerce-drill-through.jpg"
+             alt="Drill Through"
+             class="section-image">
+
+    </div>
+
+    <!-- CATEGORY DETAIL -->
+
+    <div class="section">
+
+        <h2>Category Detail Analysis</h2>
+
+        <p>
+            The Category Detail page identifies high-sales but low-profit sub-categories using scatter plots, profitability tables, and sales contribution analysis.
+        </p>
+
+        <img src="../assets/images/ecommerce-category-detail.jpg"
+             alt="Category Detail"
+             class="section-image">
+
+        <div class="highlight-box">
+            Tables generated strong sales volume but produced negative profitability, revealing aggressive discount-driven losses.
+        </div>
+
+    </div>
+
+    <!-- CONDITIONAL FORMATTING -->
+
+    <div class="section">
+
+        <h2>Conditional Formatting & Profitability Insights</h2>
+
+        <p>
+            Conditional formatting with red-to-green gradients was applied to Profit Margin % values enabling instant identification of loss-making sub-categories.
+        </p>
+
+        <img src="../assets/images/ecommerce-conditional-formatting.png"
+             alt="Conditional Formatting"
+             class="section-image">
+
+    </div>
+
+    <!-- CUSTOMER ANALYSIS -->
+
+    <div class="section">
+
+        <h2>Customer Profitability Analysis</h2>
+
+        <p>
+            Customer-level analysis revealed that high revenue customers were not always profitable customers.
+        </p>
+
+        <img src="../assets/images/ecommerce-customer-analysis.jpg"
+             alt="Customer Analysis"
+             class="section-image">
+
+        <div class="highlight-box">
+            155 customers generated negative margins. Sean Miller was the top revenue customer but produced negative profitability.
+        </div>
+
+    </div>
+
+    <!-- SALES TRENDS -->
+
+    <div class="section">
+
+        <h2>Sales Trends & Time Intelligence</h2>
+
+        <p>
+            Time intelligence reporting was developed using MTD, YTD, Previous Year Sales, and YoY Growth measures to identify seasonal sales patterns and yearly growth trends.
+        </p>
+
+        <img src="../assets/images/ecommerce-sales-trends.jpg"
+             alt="Sales Trends"
+             class="section-image">
+
+    </div>
+
+    <!-- KEY INSIGHTS -->
+
+    <div class="section">
+
+        <h2>Key Business Insights</h2>
+
+        <div class="insight-grid">
+
+            <div class="insight-card">
+                <h3>Central Region Efficiency Problem</h3>
+
+                <p>
+                    Central region generated significantly higher sales than South but lower profit, indicating operational inefficiencies.
+                </p>
+            </div>
+
+            <div class="insight-card">
+                <h3>Furniture Margin Crisis</h3>
+
+                <p>
+                    Tables and Bookcases produced negative margins despite strong sales performance.
+                </p>
+            </div>
+
+            <div class="insight-card">
+                <h3>Customer Profitability Imbalance</h3>
+
+                <p>
+                    19.5% of customers generated negative profit margins.
+                </p>
+            </div>
+
+            <div class="insight-card">
+                <h3>Seasonal Sales Trends</h3>
+
+                <p>
+                    September to November consistently produced the highest sales across all four years.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- SKILLS -->
+
+    <div class="section">
+
+        <h2>Skills Demonstrated</h2>
+
+        <p>
+            Power BI • DAX • SQL • Star Schema Modeling • Data Visualization • Time Intelligence • Business Intelligence • Dashboard Design • Analytical Storytelling
+        </p>
+
+    </div>
+
+</div>
+
+</body>
+</html>
