@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Project — IBM HR Attrition Analysis</title>
+    <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body>
+
+<nav>
+    <a href="../../index.html">Senthuran S</a>
+    <a href="../../index.html">Home</a>
+    <a href="index.html">Python Projects</a>
+    <a href="../../Resume.pdf">Download Resume</a>
+</nav>
+
+<main>
+
+<h1>IBM HR Attrition Analysis (Python EDA)</h1>
+
+<img src="../../assets/images/attrition_by_department.png" alt="Attrition by Department">
+
+<h2>Project Overview</h2>
+<p>
+This Exploratory Data Analysis project investigates why employees leave IBM using 
+the IBM HR Analytics dataset — 1,470 employee records across 35 variables. 
+The goal was to identify the key drivers of attrition and build a data-driven 
+picture of which employee groups are most at risk of leaving.
+</p>
+<p>
+Tools used: Python (Pandas, NumPy, Matplotlib, Seaborn)
+</p>
+
+<h2>Dataset</h2>
+<p>
+IBM HR Analytics Employee Attrition dataset — 1,470 employees, 35 variables 
+covering demographics, compensation, job satisfaction, overtime, and tenure. 
+Zero null values. Zero duplicates. Overall attrition rate: 16.1% (237 employees left).
+</p>
+
+<h2>Analysis 1 — Attrition by Department</h2>
+<img src="../../assets/images/attrition_by_department.png" alt="Attrition by Department">
+<ul>
+    <li>Sales — 20.63% attrition (highest)</li>
+    <li>Human Resources — 19.05%</li>
+    <li>Research & Development — 13.84% (most stable)</li>
+</ul>
+<p>
+Sales has nearly 50% higher attrition than R&D. HR interventions should 
+prioritise the Sales department — investigating workload, compensation, 
+and career growth opportunities specifically for Sales roles.
+</p>
+
+<h2>Analysis 2 — Attrition by Age Group</h2>
+<img src="../../assets/images/attrition_by_age.png" alt="Attrition by Age Group">
+<ul>
+    <li>18–25 — 34.78% (nearly 1 in 3 young employees leaving)</li>
+    <li>26–35 — 19.14%</li>
+    <li>36–45 — 9.19% (most stable)</li>
+    <li>46–60 — 12.45%</li>
+</ul>
+<p>
+Entry-level employees face below-market salaries and limited growth visibility. 
+The 36–45 group is the most stable — mid-career employees who are well-established 
+and compensated show significantly lower attrition.
+</p>
+
+<h2>Analysis 3 — Attrition by Monthly Income</h2>
+<img src="../../assets/images/income_vs_attrition.png" alt="Income vs Attrition">
+<ul>
+    <li>Average income — Stayed: ₹6,833/month</li>
+    <li>Average income — Left: ₹4,787/month</li>
+    <li>Gap: ₹2,046 per month</li>
+</ul>
+<p>
+Employees who left earned ₹2,046 less per month on average. Salary is a 
+significant contributing factor — but not the only one. The overtime analysis 
+below reveals burnout as an equally powerful driver.
+</p>
+
+<h2>Analysis 4 — Attrition by Overtime</h2>
+<img src="../../assets/images/attrition_by_overtime.png" alt="Attrition by Overtime">
+<ul>
+    <li>No overtime — 10.44% attrition</li>
+    <li>Works overtime — 30.53% attrition</li>
+</ul>
+<p>
+The single most powerful finding in this analysis. Employees who work overtime 
+are 3x more likely to leave than those who don't. Overtime is a stronger predictor 
+of attrition than salary, department, or age group. Reducing mandatory overtime 
+would have the highest direct impact on retention.
+</p>
+
+<h2>Analysis 5 — Attrition by Job Satisfaction</h2>
+<img src="../../assets/images/attrition_by_satisfaction.png" alt="Attrition by Job Satisfaction">
+<ul>
+    <li>Low satisfaction (1) — 22.84%</li>
+    <li>Medium satisfaction (2) — 16.43%</li>
+    <li>High satisfaction (3) — 16.52%</li>
+    <li>Very High satisfaction (4) — 11.33%</li>
+</ul>
+<p>
+Clear inverse relationship — as satisfaction increases, attrition decreases. 
+Low satisfaction employees leave at double the rate of highly satisfied employees. 
+Regular pulse surveys and targeted action plans would provide early warning of attrition risk.
+</p>
+
+<h2>Analysis 6 — Attrition by Tenure</h2>
+<img src="../../assets/images/attrition_by_tenure.png" alt="Attrition by Tenure">
+<ul>
+    <li>0–2 years — 28.86% (highest)</li>
+    <li>3–5 years — 13.82%</li>
+    <li>6–10 years — 12.28%</li>
+    <li>11–20 years — 6.67% (lowest)</li>
+    <li>20+ years — 12.12%</li>
+</ul>
+<p>
+New employees leave at nearly 3x the rate of long-tenured staff. This signals 
+an onboarding problem — role expectations may not match reality, or starting 
+compensation is below market. After 5 years attrition drops sharply as loyalty builds.
+</p>
+
+<h2>Key Business Insights</h2>
+<ul>
+    <li>Overtime is the #1 attrition driver — 30.53% vs 10.44% for non-overtime workers</li>
+    <li>Young employees (18–25) leave at 34.78% — an early-career retention crisis</li>
+    <li>Employees who left earned ₹2,046 less per month on average</li>
+    <li>Sales department loses 1 in 5 employees annually</li>
+    <li>28.86% of new joiners (0–2 years) leave — onboarding needs urgent improvement</li>
+    <li>Low satisfaction employees leave at double the rate of highly satisfied employees</li>
+</ul>
+
+<h2>Business Recommendations</h2>
+<ul>
+    <li>Reduce overtime dependency — hire additional headcount or redistribute workload</li>
+    <li>Increase starting salaries for entry-level roles to close the ₹2,046 income gap</li>
+    <li>Implement a Sales department retention programme — mentoring, incentives, workload review</li>
+    <li>Strengthen onboarding for new joiners — structured 90-day programme with buddy system</li>
+    <li>Run quarterly job satisfaction pulse surveys with mandatory action plans</li>
+</ul>
+
+<h2>Python Concepts Used</h2>
+<ul>
+    <li>Data loading and inspection — read_csv, info(), isnull(), duplicated()</li>
+    <li>Target variable analysis — value_counts() with normalize parameter</li>
+    <li>Group-level attrition rates — groupby() with lambda function</li>
+    <li>Age and tenure banding — pd.cut() with custom bins and labels</li>
+    <li>Visualisation — Seaborn barplot and boxplot with custom colour palettes</li>
+    <li>Chart annotation — matplotlib text() for data labels on bars</li>
+    <li>Figure export — savefig() for portfolio documentation</li>
+    <li>Derived columns — map() for satisfaction labels, pd.cut() for age groups</li>
+</ul>
+
+<h2>Code</h2>
+<p>
+<a href="https://github.com/Senthuran-S/Python-Projects" target="_blank">View Python EDA Notebook on GitHub →</a>
+</p>
+
+</main>
+
+<footer>
+<p>© 2025 Senthuran S</p>
+</footer>
+
+</body>
+</html>
